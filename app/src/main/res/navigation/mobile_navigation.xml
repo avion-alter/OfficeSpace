@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.dr.office.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <activity
+        android:id="@+id/nav_account"
+        android:name="com.dr.office.views.AccountActivity"
+        android:label="@string/my_account_profile"
+        tools:layout="@layout/activity_user_account" />
+
+    <activity
+        android:id="@+id/nav_subscriptions"
+        android:name="com.dr.office.views.SubscriptionsListActivity"
+        android:label="@string/subscriptions"
+        tools:layout="@layout/activity_subscriptions" />
+
+    <activity
+        android:id="@+id/nav_favorites"
+        android:name="com.dr.office.views.FavouriteOfficeSpacesActivity"
+        android:label="@string/subscriptions"
+        tools:layout="@layout/activity_favourite_office_spaces" />
+
+    <activity
+        android:id="@+id/nav_manage_spaces"
+        android:name="com.dr.office.views.ManageSpacesActivity"
+        android:label="@string/manage_spaces"
+        tools:layout="@layout/activity_manage_spaces" />
+</navigation>

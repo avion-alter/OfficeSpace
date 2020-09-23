@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_dashboard"
+            android:iconTint="@android:color/black"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_profile"
+            android:iconTint="@android:color/black"
+            android:title="My Account/Profile" />
+        <item
+            android:id="@+id/nav_manage_spaces"
+            android:icon="@drawable/ic_manage_space"
+            android:iconTint="@android:color/black"
+            android:title="Manage spaces" />
+
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_message"
+            android:iconTint="@android:color/black"
+            android:title="Messages" />
+
+        <item
+            android:id="@+id/nav_subscriptions"
+            android:icon="@drawable/ic_subscription"
+            android:iconTint="@android:color/black"
+            android:title="Subscriptions" />
+
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favourite"
+            android:iconTint="@android:color/black"
+            android:title="Favourite" />
+
+        <item
+            android:id="@+id/nav_transactions_payments"
+            android:icon="@drawable/ic_transaction"
+            android:iconTint="@android:color/black"
+            android:title="Transactions/Payments" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:iconTint="@android:color/holo_red_dark"
+            android:title="Logout" />
+    </group>
+</menu>

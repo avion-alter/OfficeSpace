@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            android:elevation="5dp"
+            app:cardElevation="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardUseCompatPadding="true"
+            tools:targetApi="lollipop">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint"
+                android:layout_width="match_parent"
+                android:background="@drawable/row_background"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlSymmetry">
+
+                <ImageView
+                    android:id="@+id/imgConsultant"
+                    android:layout_width="@dimen/margin_100"
+                    android:layout_height="@dimen/margin_100"
+                    android:background="@drawable/demotwo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtCosultantName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:singleLine="true"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/margin_15"
+                    app:layout_constraintEnd_toStartOf="@+id/btnEdit"
+                    app:layout_constraintStart_toEndOf="@+id/imgConsultant"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="@dimen/margin_25"
+                    android:layout_height="@dimen/margin_25"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:background="@drawable/ic_heart_red"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgWishlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/ic_placeholder_red"
+                    app:layout_constraintTop_toBottomOf="@+id/btnEdit"
+                    app:layout_constraintStart_toEndOf="@+id/imgConsultant"
+                    app:layout_constraintStart_toStartOf="@+id/txtCosultantName"/>
+
+                <TextView
+                    android:id="@+id/txtHourly1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="@dimen/margin_5"
+                    android:singleLine="true"
+                    android:text="Hourly Rate: "
+                    app:layout_constraintStart_toEndOf="@+id/imgWishlist"
+                    app:layout_constraintTop_toBottomOf="@+id/txtCosultantName" />
+
+
+
+
+                <TextView
+                    android:id="@+id/viewdateLine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:text="Desfsdfsdffffffffsdfsdfsdfsdfsdfsdfsdfsdfsdfsfsfc"
+                    app:layout_constraintEnd_toStartOf="@+id/btnEdit"
+                    app:layout_constraintStart_toEndOf="@+id/imgConsultant"
+                    app:layout_constraintTop_toBottomOf="@id/txtHourly1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
